@@ -1,0 +1,256 @@
+/*清除初始化样式*/
+body,
+ul,
+ol,
+li,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+form,
+fieldset,
+table,
+td,
+img,
+div,
+dl,
+dt,
+dd,
+input {
+    margin: 0;
+    padding: 0;
+    font-family: 'PingFang SC Regular';
+}
+
+a body {
+    /*font-size: 12px;*/
+}
+
+img {
+    border: none;
+}
+
+li {
+    list-style: none;
+}
+
+input,
+select,
+textarea {
+    outline: none;
+}
+
+a {
+    text-decoration: none;
+    color:#fff;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+    /*overflow: hidden;*/
+    /*background: #161719;*/
+}
+
+/* 清除浮动 */
+
+.clearfix:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.clearfix {
+    zoom: 1;
+}
+/*分享页*/
+body {
+    background: #232429;
+    -moz-user-select: none; /*火狐*/
+    -webkit-user-select: none; /*webkit浏览器*/
+    -ms-user-select: none; /*IE10*/
+    -khtml-user-select: none; /*早期浏览器*/
+    user-select: none;
+}
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+.share_content {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    /*background: #1a1a1d;*/
+}
+
+.share_content .share_bq {
+    width: 100%;
+    height: 3.8rem;
+    background-color: rgba(27, 27, 32, 0.8);
+    position: fixed;
+    z-index: 999;
+    display: flex;
+}
+
+.share_bq img {
+    width: 2.8rem;
+    height: 2.88rem;
+    margin-top: 0.5rem;
+    margin-left: 1.1rem;
+}
+
+.share_right {
+    height: 100%;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.share_fonts {
+    width: 50%;
+    height: 100%;
+    padding-left: 0.7rem;
+}
+
+.share_fonts span {
+    font-size: 0.34rem;
+    line-height: 0.7rem;
+    display: block;
+    color: #FFFFFF;
+    margin-top: .85rem;
+}
+
+.share_fonts p {
+    font-size: 0.24rem;
+    color: #999999;
+    margin-top: .3rem;
+}
+
+.share_con_button {
+    width: 6rem;
+    height: 2.5rem;
+    color: #FFFFFF;
+    font-size: 0.8rem;
+    line-height: 2.5rem;
+    margin-top: 0.65rem;
+    background: #FF2C55;
+    border-radius: 0.2rem;
+    margin-right: 1.1rem;
+    text-align: center;
+}
+
+.share_conup {
+    width: 100%;
+    height: 40rem;
+    line-height: 43rem;
+    text-align: center;
+    color: #ffffff;
+    font-size: 1.5rem;
+}
+
+.share_title {
+    width: 100%;
+    height: 4rem;
+    background: #1a1a1d;
+    color: #FF2C55;
+    line-height: 4rem;
+    font-size: 1.5rem;
+}
+
+.share_title p {
+    padding-left: 1.37rem;
+}
+
+.video_list {
+    width: 100%;
+    background: #1a1a1d;
+    margin-top: 0.25rem;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.video_list li {
+    list-style: none;
+    box-sizing: border-box;
+    width: 50%;
+    height: 21.25rem;
+    border: 0.125rem solid #1a1a1d;
+}
+
+.video_list li a{
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.video_list .share_video_bg{
+    height: 17rem;
+    width: 100%;
+    position: relative;
+}
+
+.video_list .share_xx{
+    width: 100%;
+    height: 4rem;
+    background: #232429;
+}
+
+.video_list .share_xj{
+    width: 100%;
+    height: 1.34rem;
+    position: absolute;
+    bottom: 0.5rem;
+    background-image: url(../img/huo.png);
+    background-repeat: no-repeat;
+    background-size: 0.8rem 1.2rem;
+    background-position-x: 0.8rem;
+}
+.share_xj span{
+    margin-left: 1.8rem;
+    font-size: 0.8rem;
+    color: #FFFFFF;
+}
+.share_xj ul{
+    width: 1.6rem;
+    height: 0.24rem;
+}
+.share_xj ul li{
+    position: absolute;
+    width: 2.8rem;
+    height: 2.8rem;
+    border-radius: 50%;
+    background-image: url(../img/Group3@2x.png);
+    background-size: 100% 100%;
+    top: .5rem;
+    right: 1rem;
+    border: none;
+    box-shadow: 1px 6px 10px 0 rgba(0,0,0,0.5);
+}
+
+.video_list .share_xx  p{
+    background: #232429;
+    color: #ffffff;
+    font-size: 1.3rem;
+    padding-left: 0.85em;
+    padding-top: 0.5rem;
+}
+.video_list .share_xx img{
+    width: 1.1rem;
+    height: 1.1rem;
+    margin-left: .8rem;
+    margin-top: .5rem;
+    float: left;
+}
+.video_list .share_xx label{
+    font-size: 1.24rem;
+    color: #666;
+    margin-top: .35rem;
+    float: left;
+    margin-left: .3rem;
+}
+

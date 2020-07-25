@@ -1,0 +1,65 @@
+/*清除初始化样式*/
+body,
+ul,
+ol,
+li,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+form,
+fieldset,
+table,
+td,
+img,
+div,
+dl,
+dt,
+dd,
+input {
+	margin: 0;
+	padding: 0;
+}
+
+a body {
+	/*font-size: 12px;*/
+}
+
+img {
+	border: none;
+}
+
+li {
+	list-style: none;
+}
+
+input,
+select,
+textarea {
+	outline: none;
+}
+
+a {
+	text-decoration: none;
+        color:#fff;
+}
+html,body{
+	width: 100%;
+	height: 100%;
+	/*background: #161719;*/
+}
+
+/* 清除浮动 */
+
+.clearfix:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+.clearfix {
+	zoom: 1;
+}

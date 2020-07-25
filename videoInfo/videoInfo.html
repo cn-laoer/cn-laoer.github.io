@@ -1,0 +1,280 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>标签</title>
+    <meta name="keywords" content="分享给你一个视频" />
+    <meta name="description" content="费劲心思，你开心就好～" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <meta name="screen-orientation" content="portrait">
+    <meta name="x5-orientation" content="portrait">
+    <meta name="pathname" content="aweme_mobile_video">
+    <!--<style>-->
+        <!--html {-->
+            <!--font-size: 625%;-->
+        <!--}-->
+        <!--@media screen and (min-width:360px) and (max-width:374px) and (orientation:portrait) {-->
+            <!--html { font-size: 703%; }-->
+        <!--}-->
+        <!--@media screen and (min-width:375px) and (max-width:383px) and (orientation:portrait) {-->
+            <!--html { font-size: 732.4%; }-->
+        <!--}-->
+        <!--@media screen and (min-width:384px) and (max-width:399px) and (orientation:portrait) {-->
+            <!--html { font-size: 750%; }-->
+        <!--}-->
+        <!--@media screen and (min-width:400px) and (max-width:413px) and (orientation:portrait) {-->
+            <!--html { font-size: 781.25%; }-->
+        <!--}-->
+        <!--@media screen and (min-width:414px) and (max-width:431px) and (orientation:portrait){-->
+            <!--html { font-size: 808.6%; }-->
+        <!--}-->
+        <!--@media screen and (min-width:432px) and (max-width:479px) and (orientation:portrait){-->
+            <!--html { font-size: 843.75%; }-->
+        <!--}-->
+    <!--</style>-->
+    <script>
+        (function (win,doc) {
+            function setSize() {
+                doc.documentElement.style.fontSize=20*document.documentElement.clientWidth/320+'px';
+            }
+            setSize();
+            win.addEventListener('resize',setSize,false)
+        })(window,document)
+    </script>
+    <link rel="stylesheet" href="css/public.css" />
+    <link rel="stylesheet" href="css/sharePage.css" />
+    <script src="https://res.wx.qq.com/open/js/jweixin-1.2.0.js"></script>
+    <script>
+        var imgUrl = "http://test.api.tagoyou.com/img/wxlogo.jpg";
+        var lineLink = "http://test.api.tagoyou.com";
+        var descContent = '费劲心思，你开心就好～';
+        var shareTitle = '@你，我在这里拍了个视频';
+        var appid = 'wx3aeac2691cb2612b';
+
+        wx.config({
+            debug : false,
+            appId : appid,
+            timestamp : '{{$wx["timestamp"]}}',
+            nonceStr : '{{$wx["noncestr"]}}',
+            signature : '{{$wx["signature"]}}',
+            jsApiList : ['onMenuShareTimeline', 'onMenuShareAppMessage', 'onMenuShareQQ', 'onMenuShareQZone', 'onMenuShareWeibo']
+        });
+        wx.ready(function() {
+//朋友圈
+            wx.onMenuShareTimeline({
+                title: shareTitle, // 分享标题
+                link: lineLink, // 分享链接
+                imgUrl: imgUrl, // 分享图标
+                success: function () {
+                },
+                cancel: function () {
+                }
+            });
+//发送给好友
+            wx.onMenuShareAppMessage({
+                title: shareTitle, // 分享标题
+                desc: descContent, // 分享描述
+                link: lineLink, // 分享链接
+                imgUrl: imgUrl, // 分享图标
+                type: '', // 分享类型,music、video或link，不填默认为link
+                dataUrl: '', // 如果type是music或video，则要提供数据链接，默认为空
+                success: function () {
+                },
+                cancel: function () {
+                }
+            });
+//QQ好友
+            wx.onMenuShareQQ({
+                title: shareTitle, // 分享标题
+                desc: descContent, // 分享描述
+                link: lineLink, // 分享链接
+                imgUrl: imgUrl, // 分享图标
+                success: function () {
+                },
+                cancel: function () {
+                }
+            });
+//QQ空间
+            wx.onMenuShareQZone({
+                title: shareTitle, // 分享标题
+                desc: descContent, // 分享描述
+                link: lineLink, // 分享链接
+                imgUrl: imgUrl, // 分享图标
+                success: function () {
+                },
+                cancel: function () {
+                }
+            });
+//腾讯微博
+            wx.onMenuShareWeibo({
+                title: shareTitle, // 分享标题
+                desc: descContent, // 分享描述
+                link: lineLink, // 分享链接
+                imgUrl: imgUrl, // 分享图标
+                success: function () {
+                },
+                cancel: function () {
+                }
+            });
+        });
+        wx.error(function(res){
+            console.log(res);
+        });
+    </script>
+</head>
+<body>
+<div class="share_content">
+    <!--头部-->
+    <div class="share_bq">
+        <img src="img/logobig@2x.png" />
+        <div class="share_right">
+            <div class="share_fonts">
+                <span>标签</span>
+                <p>我身边的小视频</p>
+            </div>
+            <div class="share_con_button"><a href="http://a.app.qq.com/o/simple.jsp?pkgname=com.wwyt.tago">立即下载</a></div>
+        </div>
+    </div>
+    <!--http://47.93.247.136/office/oppor9s.mp4-->
+    <div class="share_conup">
+        <div id="bigs">
+            <video oncanplay="videoCanPlay()" onplaying="videoOnplaying()" onended="videoOnended()" poster="http://tago-dev.oss-cn-shanghai.aliyuncs.com/public/videoShare/201709/11/4414/9d5c29585e2911437266a80b2dec474c.jpeg"
+                   style="object-fit: fill;" x5-video-player-type="h5"  x5-video-orientation="portraint"
+                   class="share_video" id="share_video" webkit-playsinline playsinline src="http://tago-dev.oss-cn-shanghai.aliyuncs.com/public/video/201709/11/4414/9d5c29585e2911437266a80b2dec474c.mp4">
+            </video>
+            <img class="btn_video_play" id="btn_video_play" src="img/btn_play.png" onclick="playVideo()"/>
+        </div>
+        <div class="share_spc" id="spc" onclick="videoPause()">
+            <!--视频上层左侧信息-->
+            <div class="share_spc_left">
+                <img src="img/Group83@2x.png" width="35" height="19" />
+                <img src="img/Group85@2x.png" width="35" height="19" class="share_spc_left_new"/>
+                <p class="share_spc_left_b">美美的夏威夷之旅美美的夏威夷之旅美美的夏威夷之旅</p>
+                <p class="share_spc_left_s">@ 她那娜 MR.ZHANG@ 她那娜 MR.ZHANG@ 她那娜 MR.ZHANG@ 她那娜 MR.ZHANG@ 她那娜 MR.ZHANG@ 她那娜 MR.ZHANG@ 她那娜 MR.ZHANG</p>
+                <div class="share_spc_bq">
+                    <img src="http://tago-dev.oss-cn-shanghai.aliyuncs.com/protect/labelColor/201708/59a633aeecaba.png"/><span>一起去旅行</span>
+                </div>
+            </div>
+            <!--视频右侧用户分享图标等列表层-->
+            <div class="share_spc_right">
+                <ul>
+                    <li><a href="http://a.app.qq.com/o/simple.jsp?pkgname=com.wwyt.tago"><img class="imgHeight" src="http://a.app.qq.com/o/simple.jsp?pkgname=com.wwyt.tago" /></a></li>
+                    <li><a href="http://a.app.qq.com/o/simple.jsp?pkgname=com.wwyt.tago"><img src="img/like.png" /><p>1</p></a></li>
+                    <li><a href="http://a.app.qq.com/o/simple.jsp?pkgname=com.wwyt.tago"><img src="img/ic_video_comment.png" /><p>3</p></a></li>
+                    <li><a href="http://a.app.qq.com/o/simple.jsp?pkgname=com.wwyt.tago"><img src="img/share.png" /><p>5</p></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="video_list" id="video_list_box">
+        <div class="share_user" id="share_user">
+            <img class="share_user_imgradius" src="http://tago-dev.oss-cn-shanghai.aliyuncs.com/protect/user_default.png" />
+            <div class="share_user_txt">
+                <p>who is this</p>
+                <img src="http://tago-dev.oss-cn-shanghai.aliyuncs.com/protect/labelColor/201708/59a633aeecaba.png" />
+                <label>aaa</label>
+            </div>
+            <div class="share_button"><a href="http://a.app.qq.com/o/simple.jsp?pkgname=com.wwyt.tago"><span class="share_button_span">+</span> 关注</a></div>
+        </div>
+        <div class="share_title"><p>热门推荐</p></div>
+        <ul id="video_list">
+            <li><a href="http://a.app.qq.com/o/simple.jsp?pkgname=com.wwyt.tago">
+                <div class="share_video_bg" style="background-image: url(http://tago-dev.oss-cn-shanghai.aliyuncs.com/public/videoShare/201709/15/4446/c04fe0135eed92156b172d107f0905f2.jpeg);">
+                    <div class="share_xj"><span>100</span>
+                        <ul><li></li></ul>
+                    </div>
+                </div>
+                <div class="share_xx">
+                    <p>asgsdg</p>
+                    <img src="http://tago-dev.oss-cn-shanghai.aliyuncs.com/protect/labelColor/201708/59a634ce123a7.png">
+                    <label>还作死</label>
+                </div>
+            </a></li>
+            <li><a href="http://a.app.qq.com/o/simple.jsp?pkgname=com.wwyt.tago">
+                <div class="share_video_bg" style="background-image: url(http://tago-dev.oss-cn-shanghai.aliyuncs.com/public/videoShare/201709/15/4446/c04fe0135eed92156b172d107f0905f2.jpeg);">
+                    <div class="share_xj"><span>100</span>
+                        <ul><li></li></ul>
+                    </div>
+                </div>
+                <div class="share_xx">
+                    <p>asgsdg</p>
+                    <img src="http://tago-dev.oss-cn-shanghai.aliyuncs.com/protect/labelColor/201708/59a634ce123a7.png">
+                    <label>还作死</label>
+                </div>
+            </a></li>
+            <li><a href="http://a.app.qq.com/o/simple.jsp?pkgname=com.wwyt.tago">
+                <div class="share_video_bg" style="background-image: url(http://tago-dev.oss-cn-shanghai.aliyuncs.com/public/videoShare/201709/15/4446/c04fe0135eed92156b172d107f0905f2.jpeg);">
+                    <div class="share_xj"><span>100</span>
+                        <ul><li></li></ul>
+                    </div>
+                    <div class="share_xj_shadow"></div>
+                </div>
+                <div class="share_xx">
+                    <p>asgsdg</p>
+                    <img src="http://tago-dev.oss-cn-shanghai.aliyuncs.com/protect/labelColor/201708/59a634ce123a7.png">
+                    <label>还作死</label>
+                </div>
+            </a></li>
+            <li><a href="http://a.app.qq.com/o/simple.jsp?pkgname=com.wwyt.tago">
+                <div class="share_video_bg" style="background-image: url(http://tago-dev.oss-cn-shanghai.aliyuncs.com/public/videoShare/201709/15/4446/c04fe0135eed92156b172d107f0905f2.jpeg);">
+                    <div class="share_xj"><span>100</span>
+                        <ul><li></li></ul>
+                    </div>
+                </div>
+                <div class="share_xx">
+                    <p>asgsdg</p>
+                    <img src="http://tago-dev.oss-cn-shanghai.aliyuncs.com/protect/labelColor/201708/59a634ce123a7.png">
+                    <label>还作死</label>
+                </div>
+            </a></li>
+            <li><a href="http://a.app.qq.com/o/simple.jsp?pkgname=com.wwyt.tago">
+                <div class="share_video_bg" style="background-image: url(http://tago-dev.oss-cn-shanghai.aliyuncs.com/public/videoShare/201709/15/4446/c04fe0135eed92156b172d107f0905f2.jpeg);">
+                    <div class="share_xj"><span>100</span>
+                        <ul><li></li></ul>
+                    </div>
+                </div>
+                <div class="share_xx">
+                    <p>asgsdg</p>
+                    <img src="http://tago-dev.oss-cn-shanghai.aliyuncs.com/protect/labelColor/201708/59a634ce123a7.png">
+                    <label>还作死</label>
+                </div>
+            </a></li>
+        </ul>
+    </div>
+</div>
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/app.js"></script>
+<script src="js/jwplayer.js"></script>
+<script>
+    window.onload=function(){
+        var aA = document.getElementsByTagName("a");
+        for( var i=0;i<aA.length;i++){
+            var u = navigator.userAgent, app = navigator.appVersion;
+            var isAndroid = u.indexOf('Android') > -1 || u.indexOf('Adr') > -1; //android终端
+            var isiOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/); //ios终端
+            if (isAndroid) {
+                aA.href = "http://a.app.qq.com/o/simple.jsp?pkgname=com.wwyt.tago";
+            }else if (isiOS) {
+                var ifr = document.createElement('iframe');
+                ifr.src = 'com.TAgo.Tago://';
+                ifr.style.display = 'none';
+                document.body.appendChild(ifr);
+                window.setTimeout(function(){
+                    document.body.removeChild(ifr);
+                },3000);
+
+                aA.href = "https://itunes.apple.com/an/app/qq/id1248177521";
+
+
+//                aA.onclick = function(){
+                // 通过iframe的方式试图打开APP，如果能正常打开，会直接切换到APP，并自动阻止a标签的默认行为
+                // 否则打开a标签的href链接
+//                    aA.href = "https://itunes.apple.com/cn/app/qq/id1248177521";
+//                };
+            }
+        };
+    };
+
+</script>
+</body>
+</html>
