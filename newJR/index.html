@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+	<meta charset="utf-8">
+	<title>星云网咖年会邀请函</title>
+	<link rel="stylesheet" href="css/jquery.fullPage.min.css">
+	<script type="text/javascript">
+        (function (win,doc) {
+            function setSize() {
+                doc.documentElement.style.fontSize=20*document.documentElement.clientWidth/320+'px';
+            }
+            setSize();
+            win.addEventListener('resize',setSize,false)
+        })(window,document)
+	</script>
+	<style>
+		* { margin: 0; padding: 0;}
+		ul { list-style-type: none;}
+		.top { position: fixed; left: 0; right: 0; top: 0; z-index: 999; height: 50px; background-color: rgba(0, 0, 0, 0.6);}
+		.menu { width: 1000px; margin: 0 auto; overflow: hidden;}
+		.logo { float: left; margin-top: 9px;}
+		.logo a { display: inline-block; width: 32px; height: 32px; background-image: url(images-14/logo_2x.png); background-size: 32px 32px;}
+		.nav { float: right; margin-top: 10px; font-size: 0;}
+		.nav li { display: inline-block; margin-left: 40px;}
+		.nav a { display: inline-block; height: 30px; line-height: 30px; font-size: 12px; color: #fff; text-decoration: none;}
+		.nav a:hover { color: #83c3f3;}
+		/*.section { text-align: center; background-repeat: no-repeat; background-position: 50% 50%; background-size: cover; overflow: hidden;}
+        #section0 { background-image: url(img/FqJou6vPjN79zbwsjZcZksGGM2B2.png);}
+        #section1 { background-image: url(img/FqJou6vPjN79zbwsjZcZksGGM2B2.png);}
+        #section2 { background-image: url(img/FqJou6vPjN79zbwsjZcZksGGM2B2.png);}
+        #section3 { background-image: url(img/FqJou6vPjN79zbwsjZcZksGGM2B2.png);}
+        #section4 { background-image: url(img/FqJou6vPjN79zbwsjZcZksGGM2B2.png);}
+        .title1 { opacity: 0.8; font-size: 72px; line-height: 93px;color: #FFFFFF;}
+        .ma-t{width: 100%;height: 16%;}
+        .title1{width: 80%;height: 220px;margin: 0 auto;}
+        .title1 img {width: 100%;height: 100%;}
+        .title2 { opacity: 0.8; font-size: 40px; line-height: 75px; color: #FFFFFF;}
+        .title3 { font-size: 24px; font-family: 'PingFang-SC-UltraLight', '微软雅黑', '宋体'; line-height: 48px; margin-top: 20px; opacity: 0.7;}
+        .title3{width: 80%;height: 220px;margin: 0 auto;color: #FFFFFF;opacity: 0.7; font-size: 24px;line-height: 48px;}
+        .title3 img {width: 100%;height: 100%;}
+        .line{width: 85%;height: 3px;background: #FFFFFF;margin:  0 auto;}
+        .line1{width: 85%;height: 2px;background: #FFFFFF;margin:  0 auto;}
+        #section1 .title1, #section1 .title2, #section2 .title1, #section2 .title2 { color: #fff; opacity: 1;}
+        #section1 .title3, #section2 .title3 { color: #fff;}
+        #section3 .title3 { color: #000;}*/
+		/*#section1 .title1 { background: url(images-14/titleline2.png) no-repeat center bottom;}*/
+		/*#section2 .title1 { background: url(images-14/titleline3.png) no-repeat center bottom;}*/
+		/*#section3 .title1 { background: url(images-14/titleline4.png) no-repeat center bottom;}*/
+		/*.mTxt1 { width: 526px; height: 195px; margin: 0 auto; position: relative; top: 25%; background: url(images-14/oneTxt.png) no-repeat 0 0;}
+        .DownloadBtn { cursor: pointer; margin: 85px auto 0; width: 220px; height: 50px; position: relative; background: #5396FF; color: #fff; line-height: 50px; font-size: 24px; border-radius: 25px;}
+        .DownloadBtn a { display: inline-block; width: 100%; height: 100%; color: #fff; font-family: 'PingFang-SC-UltraLight', '微软雅黑', '宋体';}
+        .mTxt1 { width: 526px; height: 195px; margin: 0 auto; position: relative; top: 25%; background: url(images-14/oneTxt.png) no-repeat 0 0;}
+        .DownloadBtn { cursor: pointer; margin: 85px auto 0; width: 220px; height: 50px; position: relative; background: #5396FF; color: #fff; line-height: 50px; font-size: 24px; border-radius: 25px;}
+        .DownloadBtn a { display: inline-block; width: 100%; height: 100%; color: #fff; font-family: 'PingFang-SC-UltraLight', '微软雅黑', '宋体'; text-decoration: none;}
+        #fp-nav ul li a span, .fp-slidesNav ul li a span { background-color: #fff;}
+        .leftRevolvingFlower{width: 350px;height: 479px;background: url(img/FtM5sGxGIMZj4sp7gXglSreCcfdz.png) no-repeat 100% 100%;position: fixed;left: -175px;bottom: -239.5px;z-index: 80;}
+        .rightRevolvingFlower{width: 350px;height: 479px;background: url(img/FtM5sGxGIMZj4sp7gXglSreCcfdz.png) no-repeat 100% 100%;position: fixed;right: -175px;top: -239.5px;z-index: 80;}
+        @-webkit-keyframes rotation{from {-webkit-transform: rotate(0deg);}to {-webkit-transform: rotate(360deg);}}
+        .Rotation{-webkit-transform: rotate(360deg);animation: rotation 3s linear infinite;-moz-animation: rotation 3s linear infinite;-webkit-animation: rotation 3s linear infinite;-o-animation: rotation 3s linear infinite;}
+        .bgMusic{width: 40px;height: 40px;position: fixed;top: 40px;right: 60px;z-index: 99;}
+        .bgMusic img{width: 100%;height: 100%;position: absolute;left: 0;top: 0;}
+        @media only screen and (max-width:900px) {*/
+		.section { text-align: center; background-repeat: no-repeat; background-position: 50% 50%; background-size: cover; overflow: hidden;}
+		#section0 { background-image: url(img/FqJou6vPjN79zbwsjZcZksGGM2B2-iloveimg-compressed.png);}
+		#section1 { background-image: url(img/FqJou6vPjN79zbwsjZcZksGGM2B2-iloveimg-compressed.png);position: relative;}
+		#section2 { background-image: url(img/FqJou6vPjN79zbwsjZcZksGGM2B2-iloveimg-compressed.png);position: relative;}
+		#section3 { background-image: url(img/FqJou6vPjN79zbwsjZcZksGGM2B2-iloveimg-compressed.png);position: relative;}
+		#section4 { background-image: url(img/FqJou6vPjN79zbwsjZcZksGGM2B2-iloveimg-compressed.png);position: relative;}
+		#section5 { background-image: url(img/FqJou6vPjN79zbwsjZcZksGGM2B2-iloveimg-compressed.png);position: relative;}
+		#section6 { background-image: url(img/FqJou6vPjN79zbwsjZcZksGGM2B2-iloveimg-compressed.png);}
+		#section7 { background-image: url(img/FqJou6vPjN79zbwsjZcZksGGM2B2-iloveimg-compressed.png);}
+		#section8 { background-image: url(img/FqJou6vPjN79zbwsjZcZksGGM2B2-iloveimg-compressed.png);}
+		#section9 { background-image: url(img/FqJou6vPjN79zbwsjZcZksGGM2B2-iloveimg-compressed.png);}
+		.title1 { opacity: 0.8; width: 85%; margin: 0 auto; font-size: 1.72rem; line-height: 1.968rem;color: #FFFFFF;}
+		.ma-t{width: 100%;height: 8%;}
+		.ma-st{width: 100%;height: 1rem;}
+		/*.title1{width: 80%;height: 220px;margin: 0 auto;}*/
+		/*.title1 img {width: 100%;height: 100%;}*/
+		.title2 { opacity: 0.8; font-size: 0.90rem; width: 85%; margin: 0 auto; line-height: 1.5rem; color: #FFFFFF;}
+		/*.title3 { font-size: 24px; font-family: 'PingFang-SC-UltraLight', '微软雅黑', '宋体'; line-height: 48px; margin-top: 20px; opacity: 0.7;}*/
+		.title3{width: 80%;height: 2.38rem;margin: 0 auto;color: #FFFFFF;opacity: 0.7; font-size: 1.024rem;line-height: 2.38rem;}
+		.title4{width: 80%;height: 7.38rem;margin: 0 auto;margin-top:3rem;background:#000000;color: #FFFFFF;opacity: 1; font-size: 1.024rem;line-height: 2.38rem;}
+		.title4 img {width: 100%;height: 100%;opacity: 1;}
+		.title5{width: 80%;height: 1.8rem;margin: 0 auto;color: #FFFFFF;opacity: 0.8; font-size: 1.2rem;line-height: 1.2rem;}
+		.line{width: 85%;height: 0.128rem;background: #FFFFFF;margin:  0 auto;}
+		.line1{width: 85%;height: 0.085rem;background: #FFFFFF;margin:  0 auto;}
+		.line2{width: 85%;height: 0.055rem;background: #FFFFFF;margin:  0 auto;}
+		p{font-size: 0.85rem;line-height: 1.2rem;color: #FFFFFF;text-align: left;padding-left: 1rem;}
+		#section1 .title1, #section1 .title2, #section2 .title1, #section2 .title2 { color: #fff; opacity: 1;}
+		#section1 .title3, #section2 .title3 { color: #fff;}
+		#section3 .title3 { color: #000;}
+		#section1 .qgy{width: 100%;height: 100%;position: absolute;left: 0;top: 0;z-index:66;background-repeat: no-repeat; background-position: 50% 50%; background-size: cover; overflow: hidden;background-image: url(img/2.jpg);}
+		#section1 .qgyDesc{width: 100%;height: 100%;position: absolute;left: 0;top: 0;z-index:68;background-repeat: no-repeat; background-position: 50% 50%; background-size: cover; overflow: hidden;background-image: url(img/2.png);}
+		/*#section2 .ys{width: 100%;height: 100%;position: absolute;left: 0;top: 0;z-index:66;background-repeat: no-repeat; background-position: 50% 50%; background-size: cover; overflow: hidden;background-image: url(img/mdjf.png);}*/
+		.ys{width: 100%;height: 10rem;position: absolute;z-index: 70;/*left: 10%;*/top: 15%;}
+		.ys img{width: 100%;height: 100%;}
+		#section2 .title4{width: 80%;height: 7.38rem;margin: 0 auto;margin-top:0.5rem;background:#000000;color: #FFFFFF;opacity: 1; font-size: 1.024rem;line-height: 2.38rem;position: absolute;z-index: 70;left: 10%;}
+		#section2 .bbg{width: 100%;height: 80%;position: absolute;left: 0;top: 10%;z-index:66;background-repeat: no-repeat; background-position: 75% 50%; background-size: cover; overflow: hidden;background-image: url(img/bgyr.png);}
+		#section3 .bbg{width: 100%;height: 80%;position: absolute;left: 0;top: 10%;z-index:66;background-repeat: no-repeat; background-position: 50% 50%; background-size: cover; overflow: hidden;background-image: url(img/bgxz.png);}
+		#section3 .title4{width: 80%;height: 7.38rem;margin: 0 auto;margin-top:0.5rem;background:#000000;color: #FFFFFF;opacity: 1; font-size: 1.024rem;line-height: 2.38rem;position: absolute;z-index: 70;left: 10%;}
+		#section4 .bbg{width: 100%;height: 80%;position: absolute;left: 0;top: 10%;z-index:66;background-repeat: no-repeat; background-position: 50% 50%; background-size: cover; overflow: hidden;background-image: url(img/bgrz.png);}
+		#section4 .title4{width: 80%;height: 7.38rem;margin: 0 auto;margin-top:0.5rem;background:#000000;color: #FFFFFF;opacity: 1; font-size: 1.024rem;line-height: 2.38rem;position: absolute;z-index: 70;left: 10%;}
+		#section5 .bbg{width: 100%;height: 80%;position: absolute;left: 0;top: 10%;z-index:66;background-repeat: no-repeat; background-position: 55% 50%; background-size: cover; overflow: hidden;background-image: url(img/bgyj.png);}
+		#section5 .title4{width: 80%;height: 7.38rem;margin: 0 auto;margin-top:0.5rem;background:#000000;color: #FFFFFF;opacity: 1; font-size: 1.024rem;line-height: 2.38rem;position: absolute;z-index: 70;left: 10%;}
+
+		#section3 .xz{width: 100%;height: 100%;position: absolute;left: 0;top: 0;z-index:66;background-repeat: no-repeat; background-position: 50% 50%; background-size: cover; overflow: hidden;background-image: url(img/xz.png);}
+		#section4 .hn{width: 100%;height: 100%;position: absolute;left: 0;top: 0;z-index:66;background-repeat: no-repeat; background-position: 50% 50%; background-size: cover; overflow: hidden;background-image: url(img/hn.png);}
+		#section5 .yj{width: 100%;height: 100%;position: absolute;left: 0;top: 0;z-index:66;background-repeat: no-repeat; background-position: 50% 50%; background-size: cover; overflow: hidden;background-image: url(img/yj.png);}
+		#section6 .now{width: 100%;height: 100%;position: absolute;left: 0;top: 0;z-index:66;background-repeat: no-repeat; background-position: 50% 50%; background-size: cover; overflow: hidden;background-image: url(img/321321321321.jpg);}
+		#section6 .nowDesc{width: 100%;height: 96%;position: absolute;left: 0;top: 0;z-index:68;background-repeat: no-repeat; background-position: 50% 50%; background-size: cover; overflow: hidden;background-image: url(img/now.png);}
+		#section7 .now{width: 100%;height: 100%;position: absolute;left: 0;top: 0;z-index:66;background-repeat: no-repeat; background-position: 50% 50%; background-size: cover; overflow: hidden;background-image: url(img/hdlc.png);}
+		#section8 .now{width: 100%;height: 100%;position: absolute;left: 0;top: 0;z-index:66;background-repeat: no-repeat; background-position: 50% 50%; background-size: cover; overflow: hidden;background-image: url(img/hddz.png);}
+		/*#section1 .title1 { background: url(images-14/titleline2.png) no-repeat center bottom;}*/
+		/*#section2 .title1 { background: url(images-14/titleline3.png) no-repeat center bottom;}*/
+		/*#section3 .title1 { background: url(images-14/titleline4.png) no-repeat center bottom;}*/
+		.mTxt1 { width: 22.44rem; height: 8.32rem; margin: 0 auto; position: relative; top: 25%; background: url(images-14/oneTxt.png) no-repeat 0 0;}
+		.DownloadBtn { cursor: pointer; margin: 85px auto 0; width: 9.38rem; height: 2.133rem; position: relative; background: #5396FF; color: #fff; line-height: 2.133rem; font-size: 1.024rem; border-radius: 1.03rem;}
+		.DownloadBtn a { display: inline-block; width: 100%; height: 100%; color: #fff; font-family: 'PingFang-SC-UltraLight', '微软雅黑', '宋体';}
+		.mTxt1 { width: 22.44rem; height: 8.32rem; margin: 0 auto; position: relative; top: 25%; background: url(images-14/oneTxt.png) no-repeat 0 0;}
+		.DownloadBtn { cursor: pointer; margin: 3.62rem auto 0; width: 8.32rem; height: 2.133rem; position: relative; background: #5396FF; color: #fff; line-height: 2.133rem; font-size: 1.024rem; border-radius: 1.03rem;}
+		.DownloadBtn a { display: inline-block; width: 100%; height: 100%; color: #fff; font-family: 'PingFang-SC-UltraLight', '微软雅黑', '宋体'; text-decoration: none;}
+		#fp-nav ul li a span, .fp-slidesNav ul li a span { background-color: #fff;}
+		.leftRevolvingFlower{width: 8.93rem;height: 9.437rem;background: url(img/FtM5sGxGIMZj4sp7gXglSreCcfdz.png) no-repeat 100% 100%;position: fixed;left: -4.465rem;bottom: -4.7185rem;z-index: 80;}
+		.rightRevolvingFlower{width: 8.93rem;height: 9.437rem;background: url(img/FtM5sGxGIMZj4sp7gXglSreCcfdz.png) no-repeat 100% 100%;position: fixed;right: -4.465rem;top: -4.7185rem;z-index: 80;}
+		@-webkit-keyframes rotation{from {-webkit-transform: rotate(0deg);}to {-webkit-transform: rotate(360deg);}}
+		.Rotation{-webkit-transform: rotate(360deg);animation: rotation 3s linear infinite;-moz-animation: rotation 3s linear infinite;-webkit-animation: rotation 3s linear infinite;-o-animation: rotation 3s linear infinite;}
+		.bgMusic{width: 1.70rem;height: 1.70rem;position: fixed;top: 1.70rem;right: 1.70rem;z-index: 99;}
+		.bgMusic img{width: 100%;height: 100%;}
+		.bgFont{width: 70%;height: 6.2rem;margin: 0 auto;}
+		.bgFont img {width: 100%;height: 100%;}
+		.title2bg{width: 45%;height: 3rem;margin: 0 auto;margin-top: -1.3rem;}
+		.title2bg img{width: 100%;height: 100%;}
+		.te-l{text-align: left;}
+		.bgImg4{width: 100%;height: 15rem;background: rgba(0,0,0,0.3);background: url(img/lALPBbCc1Ukefh7NAyDNBQA_1280_800.png) no-repeat;margin-top: -10.5rem;}
+		.img8{width: 100%;height: auto;}
+		/*}*/
+	</style>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery.fullPage.min.js"></script>
+	<script>
+        $(function() {
+            $('#fullpage').fullpage({
+                navigation: true
+            });
+        });
+	</script>
+</head>
+
+<body>
+
+<div id="fullpage">
+	<div class="section" id="section0">
+
+		<!--<div class="title1">邀请函</div>-->
+		<div class="bgFont"><img src="img/FrBKWrYmKjHiYaxyZGxGBNAllkk7.png" alt="" /></div>
+		<div class="title2bg"><img src="img/lALPBbCc1UkAta_Ms80Bmg_410_179.png" alt="" /></div>
+		<div class="ma-st"></div>
+		<div class="line1"></div>
+		<div class="title3">2018星云网咖年会</div>
+
+	</div>
+	<div class="section" id="section1">
+
+		<!--<div class="title5">时光荏苒  岁月如梭</div>
+		<div class="line"></div>
+		<div class="title3">网咖年会已走过第3个年头</div>
+		<div class="line1"></div>
+		<div class="title3">这也意味着</div>
+		<div class="line2"></div>
+		<div class="title3">我们认识了7年之久</div>-->
+
+		<div class="qgy">
+
+		</div>
+		<div class="qgyDesc"></div>
+
+	</div>
+	<div class="section" id="section2">
+
+		<!--<div class="title1 te-l">曾经</div>-->
+		<!--<div class="line2"></div>-->
+		<!--<div class="title2 te-l">我们也可以面对疾风，完成单杀</div>-->
+		<!--<div class="ma-t"></div>-->
+
+		<div class="ys"><img src="img/cj1.png"/></div>
+		<div class="title4"><img src="img/lol3m.gif"/></div>
+		<div class="bbg"></div>
+
+
+	</div>
+	<div class="section" id="section3">
+
+		<!--<div class="title1 te-l">曾经</div>
+		<div class="line2"></div>
+		<div class="title2 te-l">瞎子的回旋踢行云流水</div>
+		<div class="ma-t"></div>-->
+		<!--<div class="xz"></div>-->
+		<div class="ys"><img src="img/cj2.png"/></div>
+		<div class="title4"><img src="img/lol2m.gif" alt="" /></div>
+		<div class="bbg"></div>
+
+	</div>
+	<div class="section" id="section4">
+
+		<!--<div class="title1 te-l">曾经</div>
+		<div class="line2"></div>
+		<div class="title2 te-l">我们无法忘记被火男支配的恐惧</div>
+		<div class="ma-t"></div>
+		<div class="ma-t"></div>-->
+		<!--<div class="hn"></div>-->
+		<div class="ys"><img src="img/cj3.png"/></div>
+		<div class="title4"><img src="img/lol1m.gif"/></div>
+
+		<div class="bbg"></div>
+	</div>
+	<div class="section" id="section5">
+
+		<!--<div class="title1 te-l">曾经</div>
+		<div class="line2"></div>
+		<div class="title2 te-l">杀人红尘中，脱身白燕里</div>
+		<div class="ma-t"></div>-->
+		<div class="ys"><img src="img/cj4.png"/></div>
+		<div class="title4"><img src="img/lol4m.gif"/></div>
+		<div class="bbg"></div>
+
+	</div>
+	<div class="section" id="section6">
+
+		<!--<div class="title3"></div>
+		<p>匆匆数载</p>
+		<p>逝水流年</p>
+		<p>那一年，我们青涩懵懂，初识同窗</p>
+		<p>那一年，我们诉说衷肠，学会感伤</p>
+		<p>那一年，我们挥霍青春，挽留时光</p>
+		<p>那一年，我们背上行囊，奔向远方</p>
+		<p>...</p>
+		<br />
+		<p>山高水长</p>
+		<p>不忘初心</p>
+		<p>不管未来的路将走向何方</p>
+		<p>我们网咖兄弟的友谊都是永恒不变的宝藏</p>
+		<br />
+		<p>今天</p>
+		<p>就让我们再一次重温曾经的青春岁月</p>
+		<p>陪我，陪自己，再战一次！</p>-->
+		<div class="now"></div>
+		<div class="nowDesc"></div>
+
+	</div>
+	<div class="section" id="section7">
+		<!--<div class="title2">活动流程:</div>-->
+		<!--<div class="line"></div>-->
+		<!--<div class="ma-t"></div>-->
+		<!--<p>英雄高尔夫</p>-->
+		<!--<p>珍爱生命</p>-->
+		<!--<p>龙坑solo赛</p>-->
+		<!--<p>搜索提莫队长</p>-->
+		<!--<p>追杀提莫队长</p>-->
+		<!--<p>擂台接力赛</p>-->
+		<!--<p>谁是卧底</p>-->
+		<div class="now"></div>
+	</div>
+	<div class="section" id="section8">
+		<div class="now"></div>
+		<a href="http://map.baidu.com/?newmap=1&ie=utf-8&s=s%26wd%3D567网咖怀善店" style="display: block;width: 100%;height: 100%;position: absolute;left: 0;top: 0;z-index: 80;"></a>
+	</div>
+	<div class="section" id="section9">
+		<canvas id="animate">
+			no support canvas
+		</canvas>
+	</div>
+</div>
+<div class="leftRevolvingFlower Rotation"></div>
+<div class="rightRevolvingFlower Rotation"></div>
+<div class="bgMusic Rotation"><img src="img/bgmBtn-fbd2dc.svg" alt="" /></div>
+<audio src="music/bgm1.mp3" id="bgMus" loop="loop"></audio>
+<script type="text/javascript">
+    $(function(){
+        var player = $("#bgMus")[0];
+        player.play();
+        $(".bgMusic").on("click",function(){
+            if (player.paused){ /*如果已经暂停*/
+                player.play(); /*播放*/
+                $(".bgMusic").addClass("Rotation");
+            }else {
+                player.pause();/*暂停*/
+                $(".bgMusic").removeClass("Rotation");
+            }
+        });
+
+    });
+</script>
+<script>
+    var canvas = document.getElementById('animate');
+    canvas.width = document.body.clientWidth;
+    canvas.height = canvas.width/344*465+10;
+    var ctx = canvas.getContext('2d');
+
+
+    var imgList = [
+        {'src': 'B.png', 'finalX':144, 'finalY':0, move:true, scale:0.98},
+        {'src': '褚.png', 'finalX':243, 'finalY':85, move:true,scale:1.1},
+        {'src': '大儿.png', 'finalX':50, 'finalY':100, move:true, scale: 1.2},
+        {'src': '大火.png', 'finalX':194, 'finalY':278, move:true,scale:0.64},
+        {'src': '飞.png', 'finalX':254, 'finalY':308, move:true, scale:0.92},
+        {'src': '狗存.png', 'finalX':246, 'finalY':0, move:true,scale:1.07},
+        {'src': '狗领.png', 'finalX':294, 'finalY':97, move:true, scale:0.94},
+        {'src': '果.png', 'finalX':201, 'finalY':96, move:true},
+        {'src': '海.png', 'finalX':148, 'finalY':233 , move:true,scale:0.5},
+        {'src': '浩然.png', 'finalX':0, 'finalY':387, move:true,scale:0.78},
+        {'src': '佳音.png', 'finalX':67, 'finalY':0, move:true},
+        {'src': '老二.png', 'finalX':0, 'finalY':318, move:true,scale:0.81},
+        {'src': '老四.png', 'finalX':125, 'finalY':310, move:true, scale:0.78},
+        {'src': '李圣杰.png', 'finalX':0, 'finalY':92, move:true,scale:1.04},
+        {'src': '两米.png', 'finalX':187, 'finalY':330, move:true,scale:0.87},
+        {'src': '柳.png', 'finalX':202, 'finalY':-3, move:true,scale:0.99},
+        {'src': '六.png', 'finalX':206, 'finalY':417, move:true,scale:0.64},
+        {'src': '龙.png', 'finalX':71, 'finalY':314, move:true,scale:0.73},
+        {'src': '逯圣文.png', 'finalX':48, 'finalY':196, move:true, scale:0.8},
+        {'src': '三.png', 'finalX':79, 'finalY':263, move:true,scale:0.68},
+        {'src': '五.png', 'finalX':126, 'finalY':374, move:true,scale:0.92},
+        {'src': '星.png', 'finalX':63, 'finalY':375, move:true, scale:0.9},
+        {'src': '兴民.png', 'finalX':0, 'finalY':0, move:true},
+        {'src': '羊崽.png', 'finalX':303, 'finalY':191, move:true, scale:0.89},
+        {'src': '耀.png', 'finalX':224, 'finalY':189, move:true,scale:0.88},
+        {'src': '一牛.png', 'finalX':120, 'finalY':88, move:true, scale:1.23},
+        {'src': '羽生.png', 'finalX':258, 'finalY':391, move:true, scale:0.83},
+    ];
+
+    imgLoadFinish = false;
+    startAnimate = false;
+
+    /*star
+     *loading模块
+     *实现图片的预加载，并显示进度条
+     *参数：图片数组对象，加载完成的回调函数
+     */
+    function loadImages(sources,callback){
+        var loadedImages = 0;
+        var numImages = sources.length;
+        ctx.font='14px bold';
+        ctx.lineWidth=5;
+        var clearWidth=canvas.width;
+        var clearHeight=canvas.height;
+        images = [];
+        for (var src in sources) {
+            images[src] = new Image();
+            //当一张图片加载完成时执行
+            images[src].onload = function(){
+                //重绘一个进度条
+                ctx.clearRect(0,0,clearWidth,clearHeight);
+                ctx.fillText('Loading:'+loadedImages+'/'+numImages,200,280);
+                ctx.save();
+                ctx.strokeStyle='#555';
+                ctx.beginPath();
+                ctx.moveTo(200,300);
+                ctx.lineTo(600,300);
+                ctx.stroke();
+                ctx.beginPath();
+                ctx.restore();
+                ctx.moveTo(200,300);
+                ctx.lineTo(loadedImages/numImages*400+200,300);
+                ctx.stroke();
+                //当所有图片加载完成时，执行回调函数callback
+                if (++loadedImages >= numImages) {
+                    // console.log(imgList);
+                    imgLoadFinish = true;
+                }
+            };
+            //把sources中的图片信息导入images数组
+            images[src].src = 'portrait/'+sources[src]['src'];
+        }
+    }
+
+    for(var i=0;i < imgList.length; i++){
+        var img = new Image();
+        img.src = 'portrait/' + imgList[i]['src'];
+        imgList[i]['img'] = img;
+    }
+
+    imgWidth = 500;
+    imgHeight = 500;
+    //静态调试
+    //    for(var j=0;j<imgList.length;j++){
+    //        if(imgList[j]['scale']){
+    //            scale = imgList[j]['scale'];
+    //        }else{
+    //            scale = 1;
+    //        }
+    //        ctx.drawImage(imgList[j]['img'], imgList[j]['finalX']/344 * canvas.width,
+    //            imgList[j]['finalY']/344 * canvas.width,
+    //            100 * scale /344 * canvas.width,
+    //            100 * scale /344 * canvas.width );
+    //    }
+    //    ctx.fillStyle = "rgb(200,0,0)";
+    //    ctx.fillRect (0, 0, 344, 465);
+    //    console.log(imgList);
+    imgWidth = 500;
+    imgHeight = 500;
+    posX = canvas.width/2 - imgWidth/2;
+    posY = canvas.height/2 - imgHeight/2;
+    percent = 100;
+
+    xa = ya = null;
+    currentImg = null;
+
+    function init(){
+        imgWidth = 500;
+        imgHeight = 500;
+        posX = canvas.width/2 - imgWidth/2;
+//        posY = canvas.height/2 - imgHeight/2;
+        posY = 0;
+        percent = 100;
+
+        if(imgList[index]){
+            currentImg = imgList[index]['img'];
+            xa = (imgList[index]['finalX'] - posX)/20;
+            ya = (imgList[index]['finalY'] - posY)/20;
+//            console.log(xa+' '+ya);
+            return true;
+        }else{
+            // console.log(finishImgList);
+            return false;
+        }
+    }
+
+
+    index = 0;
+    finishImgList = [];
+    init();
+    function draw() {
+        if(imgLoadFinish & startAnimate){
+            ctx.clearRect(0,0,canvas.width,canvas.height);
+            for(var j=0; j<finishImgList.length;j++){
+                if(finishImgList[j]['scale']){
+                    scale = finishImgList[j]['scale'];
+                }else{
+                    scale = 1;
+                }
+                ctx.drawImage(finishImgList[j]['img'],
+                    finishImgList[j]['finalX']/344 * canvas.width,
+                    finishImgList[j]['finalY']/344 * canvas.width,
+                    100*scale/344 * canvas.width, 100*scale/344 * canvas.width);
+            }
+
+            if(imgList[index]){
+                if(imgList[index]['scale']){
+                    imgScale = imgList[index]['scale'];
+                }else{
+                    imgScale = 1;
+                }
+                //            console.log('scale:'+imgScale);
+                ctx.drawImage(currentImg, posX/344 * canvas.width , posY/344 * canvas.width,
+                    imgWidth * percent/100 * imgScale/344 * canvas.width,
+                    imgHeight * percent/100 * imgScale/344 * canvas.width);
+                posX += xa;
+                posY += ya;
+                percent -=5;
+                if(percent > 20){
+                    //            window.requestAnimationFrame(draw);
+                }else{
+                    finishImgList.push(imgList[index]);
+                    //            console.log('finish num:'+finishImgList.length);
+                    index++;
+                    goon = init();
+                    // console.log('end pos:'+posX+' '+posY);
+                }
+            }
+        }
+        window.requestAnimationFrame(draw);
+    }
+
+
+    //定义预加载图片数组对象，执行loading模块
+    window.onload = function(){
+        //执行图片预加载，加载完成后执行main
+        loadImages(imgList,draw);
+        draw();
+    };
+    /*end*/
+
+    canvas.onclick = function () {
+        startAnimate = true;
+    }
+
+
+    var oBox = document.getElementById("section9");
+    //	oBox.onpropertychange=function(o){
+    var timer = setInterval(function(){
+        if(oBox.className == "section fp-section fp-table active fp-completely"){
+            startAnimate = true;
+            clearInterval(timer);
+        }
+    },300);
+    //	}
+</script>
+</body>
+
+</html>

@@ -7,18 +7,6 @@
     <title>blaoer-demo</title>
     <meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <script>
-        // ;(function (doc, win, undefined) {
-        //     var docEl = doc.documentElement,
-        //         resizeEvt = 'orientationchange' in win? 'orientationchange' : 'resize',
-        //         recalc = function () {
-        //             var clientWidth = docEl.clientWidth;
-        //             if (clientWidth === undefined) return;
-        //             docEl.style.fontSize = 20 * (clientWidth / 320) + 'px';
-        //         };
-        //     if (doc.addEventListener === undefined) return;
-        //     win.addEventListener(resizeEvt, recalc, false);
-        //     doc.addEventListener('DOMContentLoaded', recalc, false)
-        // })(document, window);
         function rem(designWidth, maxWidth) {
             var doc = document,
                 win = window,
@@ -101,12 +89,20 @@
                 <img src="img/sky.png" alt="pic" />
             </a>
         </div>
-        <!-- <div class="slide-item">
-            <a href="">
-                <p class="title"></p>
-                <p class="desc"></p>
+        <div class="slide-item">
+            <a href="newJR/index.html">
+                <p class="title">网咖年会活动</p>
+                <p class="desc">fullpage实现整页切换，canvas图片拼接</p>
+                <img src="img/jr.png" alt="pic" />
             </a>
-        </div> -->
+        </div>
+        <div class="slide-item">
+            <a href="zcxy.html">
+                <p class="title">注册协议</p>
+                <p class="desc">文字布局</p>
+                <img src="img/zcxy.png" alt="pic" />
+            </a>
+        </div>
     </div>
 </body>
 
